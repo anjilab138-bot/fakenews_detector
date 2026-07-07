@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Portfolio</title>
+    <title>Fake News Detector</title>
 </head>
-
 <body>
 
-    <h1>Anjeela</h1>
-    <p>Hello! Welcome to my portfolio.</p>
+    <h1>Fake News Detector</h1>
 
-    <h2>About</h2>
-    <p>I am learning web development.</p>
+    <p>Enter the news below:</p>
 
-    <h2>Contact</h2>
-    <p>Email: example@gmail.com</p>
+    <textarea id="news" rows="8" cols="50" placeholder="Type or paste news here..."></textarea>
+    <br><br>
+
+    <button onclick="checkNews()">Check News</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function checkNews() {
+            var news = document.getElementById("news").value.toLowerCase();
+
+            if (news.includes("shocking") || news.includes("viral") || news.includes("breaking")) {
+                document.getElementById("result").innerHTML = "Result: Fake News";
+            } else {
+                document.getElementById("result").innerHTML = "Result: Real News";
+            }
+        }
+    </script>
 
 </body>
 </html>
