@@ -68,7 +68,6 @@
         }
     </style>
 </head>
-
 <body>
 
 <header>
@@ -98,6 +97,28 @@
 <footer>
     <p>&copy; 2026 Fake News Detector. All Rights Reserved.</p>
 </footer>
+    <h1 class="h1">Fake News Detector</h1>
+
+    <p>Enter the news below:</p>
+
+    <textarea id="news" rows="8" cols="50" placeholder="Type or paste news here..."></textarea>
+    <br><br>
+
+    <button onclick="checkNews()">Check News</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function checkNews() {
+            var news = document.getElementById("news").value.toLowerCase();
+
+            if (news.includes("shocking") || news.includes("viral") || news.includes("breaking")) {
+                document.getElementById("result").innerHTML = "Result: Fake News";
+            } else {
+                document.getElementById("result").innerHTML = "Result: Real News";
+            }
+        }
+    </script>
 
 </body>
 </html>
