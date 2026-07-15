@@ -1,1 +1,95 @@
-style
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body Styling */
+.body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: #1e3d59;
+  color: #ff0000;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Main Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button {
+  background: #1e3d59;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #16324a;
+}
+
+/* Input Fields */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Results Section */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result.fake {
+  background: #ffdddd;
+  color: #a94442;
+  border: 1px solid #a94442;
+}
+
+.result.real {
+  background: #ddffdd;
+  color: #3c763d;
+  border: 1px solid #3c763d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+

@@ -1,19 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #0d6efd;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #084298;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Anjeela</h1>
-    <p>Hello! Welcome to my portfolio.</p>
+<header>
+    <h1>Fake News Detector</h1>
+    <p>Detect Fake News with AI Technology</p>
+</header>
 
-    <h2>About</h2>
-    <p>I am learning web development.</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <h2>Contact</h2>
-    <p>Email: example@gmail.com</p>
+<div class="container">
+    <h2>Check Your News</h2>
+
+    <p>Paste the news article below to check whether it is real or fake.</p>
+
+    <textarea placeholder="Enter news here..."></textarea>
+    <br>
+
+    <button>Detect News</button>
+
+    <h3 id="result">Result will appear here.</h3>
+</div>
+
+<footer>
+    <p>&copy; 2026 Fake News Detector. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
